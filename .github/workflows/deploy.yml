@@ -15,10 +15,10 @@ jobs:
          npm run build
        env:
          CI: false
-      
-      name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: master
-        FOLDED: public
+
+       name: Deploy
+       uses: JamesIves/github-pages-deploy-action@releases/v3
+       with:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         BRANCH: master
+         FOLDED: public
